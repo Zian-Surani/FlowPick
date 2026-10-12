@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #F8F9FB;
+    --card-bg: #FFFFFF;
+    --text-primary: #191C1E;
+    --text-secondary: #5F6771;
+    --text-muted: #8E97A4;
+    --border-subtle: #E8EAED;
+    --border-hover: #D7DBDF;
+    
+    /* Pastel Accents */
+    --pastel-lavender: #EFEBFD;
+    --pastel-lavender-border: #DCD4FB;
+    --pastel-lavender-text: #5941C8;
+    
+    --pastel-blue: #E8F2FE;
+    --pastel-blue-border: #CBE2FC;
+    --pastel-blue-text: #2B6CB0;
+    
+    --pastel-mint: #E7F9F0;
+    --pastel-mint-border: #C8F2DD;
+    --pastel-mint-text: #217953;
+    
+    --pastel-peach: #FFF0E6;
+    --pastel-peach-border: #FCDDC7;
+    --pastel-peach-text: #C05621;
+    
+    --pastel-yellow: #FEF8E3;
+    --pastel-yellow-border: #FCE8AA;
+    --pastel-yellow-text: #975A16;
+
+    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+  }
+
+  code, pre {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D7DBDF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #AAB1BA;
+}
+
+/* Bento card styling */
+.bento-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02), 0 2px 8px -2px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 4px 14px -3px rgba(0, 0, 0, 0.05);
+}
+
+/* Grid Cell Styles */
+.cell-transition {
+  transition: all 0.15s ease-in-out;
+}

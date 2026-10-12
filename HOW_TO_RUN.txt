@@ -1,0 +1,84 @@
+================================================================================
+FLOWPICK — ADAPTIVE WAREHOUSE LEARNING AGENT
+Fundamentals of Reinforcement Learning (Task 2)
+HOW TO RUN GUIDE
+================================================================================
+
+PREREQUISITES:
+  - Python 3.11+ (Check with: python --version)
+  - Node.js 18+  (Check with: node --version)
+
+--------------------------------------------------------------------------------
+1. RUNNING THE BACKEND (FastAPI + Q-Learning)
+--------------------------------------------------------------------------------
+
+Open a terminal (PowerShell or Command Prompt) and run:
+
+  cd backend
+
+  # Option A: If .venv already exists (pre-configured):
+  # Windows PowerShell:
+  .\.venv\Scripts\Activate.ps1
+  # OR Windows Command Prompt (cmd):
+  .venv\Scripts\activate.bat
+  # Linux / macOS:
+  source .venv/bin/activate
+
+  # Option B: If creating a fresh virtual environment:
+  python -m venv .venv
+  .venv\Scripts\activate
+  pip install -r requirements.txt
+
+  # Start the FastAPI backend server:
+  uvicorn app.main:app --reload --port 8000
+
+The backend will be available at:
+  - API Base URL:  http://localhost:8000
+  - Health Check:  http://localhost:8000/api/health
+  - Interactive Docs (Swagger): http://localhost:8000/docs
+
+Optional - Run the backend test suite (10 automated tests):
+  pytest -v
+
+--------------------------------------------------------------------------------
+2. RUNNING THE FRONTEND (React + Vite + Tailwind CSS)
+--------------------------------------------------------------------------------
+
+Open a SECOND terminal window and run:
+
+  cd frontend
+
+  # Install frontend dependencies (if not already done):
+  npm install
+
+  # Start the development server:
+  npm run dev
+
+The frontend web interface will be available at:
+  - Web Application: http://localhost:5173
+
+--------------------------------------------------------------------------------
+3. DEMO & VERIFICATION WORKFLOW
+--------------------------------------------------------------------------------
+
+1. Open http://localhost:5173 in your web browser.
+2. On the Landing Page, click "Dive In" to enter the Live Agent view.
+3. Verify that the top-right status badge displays:
+     "● FastAPI Connected (Port 8000)"
+4. Test live agent actions:
+   - Click "Step Forward" to execute discrete Q-learning steps via the backend.
+   - Click "Run Evaluation" to run a greedy episode (epsilon = 0) with the learned policy.
+5. Test reinforcement learning training:
+   - Click the "Training" tab in the header.
+   - Adjust hyperparameters if desired (Episodes: 200, Alpha: 0.1, Gamma: 0.95, Epsilon: 0.2).
+   - Click "Start Training".
+   - Watch the episode counter increment, returns update, and the Learning Curve chart plot live data.
+   - Click "Pause" or "Reset" anytime.
+6. Return to "Live Agent" to observe the agent smoothly navigating the warehouse using its updated Q-table.
+7. Click the FlowPick logo in the header anytime to return to the Landing Page.
+
+================================================================================
+AUTHORS:
+  - Zian Surani (RA2311026050085)
+  - Vaishnavi Soni (RA2311026050070)
+================================================================================
