@@ -16,8 +16,8 @@
 
 ## 👥 Academic Evaluation & Development Team
 
-- **Zian Rajeshkumar Surani** — Reg. No: `RA2311026050085` — GitHub: [@Zian-Surani](https://github.com/Zian-Surani)
-- **Vaishnavi Soni** — Reg. No: `RA2311026050070`
+- **Zian Rajeshkumar Surani** — Reg. No: `RA2311026050085` — GitHub: [@Zian-Surani](https://github.com/Zian-Surani) — *Lead RL Agent & System Architecture*
+- **Vaishnavi Soni** — Reg. No: `RA2311026050070` — GitHub: [@Vaishnavi-Soni-12](https://github.com/Vaishnavi-Soni-12) — *RL Formulation & Metrics Evaluation*
 
 ---
 
@@ -366,8 +366,8 @@ backend/tests/test_rl.py::test_api_training_status PASSED                [100%]
 
 This project is developed as part of **Task 2: Fundamentals of Reinforcement Learning** by:
 
-- **Zian Rajeshkumar Surani** (`RA2311026050085`)
-- **Vaishnavi Soni** (`RA2311026050070`)
+- **Zian Rajeshkumar Surani** (`RA2311026050085`) — [@Zian-Surani](https://github.com/Zian-Surani)
+- **Vaishnavi Soni** (`RA2311026050070`) — [@Vaishnavi-Soni-12](https://github.com/Vaishnavi-Soni-12)
 
 ---
 

@@ -102,12 +102,22 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onDiveIn }) => {
           <span className="font-semibold text-[#1E2022]">Academic Evaluation Team:</span>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-mono">
-          <span className="bg-[#FAFBFD] px-2.5 py-1 rounded-lg border border-[#E9EEF4]">
+          <a
+            href="https://github.com/Zian-Surani"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FAFBFD] px-2.5 py-1 rounded-lg border border-[#E9EEF4] hover:border-[#5941C8] transition-colors"
+          >
             <strong>Zian Rajeshkumar Surani</strong> (RA2311026050085)
-          </span>
-          <span className="bg-[#FAFBFD] px-2.5 py-1 rounded-lg border border-[#E9EEF4]">
+          </a>
+          <a
+            href="https://github.com/Vaishnavi-Soni-12"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FAFBFD] px-2.5 py-1 rounded-lg border border-[#E9EEF4] hover:border-[#2563EB] transition-colors"
+          >
             <strong>Vaishnavi Soni</strong> (RA2311026050070)
-          </span>
+          </a>
         </div>
       </div>
     </div>
